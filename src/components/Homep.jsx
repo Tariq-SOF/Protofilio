@@ -53,9 +53,9 @@ const settings = {
     backgroundPosition: 'center',
   }}
 >
-  <div className="w-full max-sm:w-[100%] max-sm:h-[100vh] h-[100vh] bg-[#000000da] pt-16 border-t border-[#e0f2fe57]">
-    <div className=" h-full w-full max-md:h-full max-sm:w-full p-5 flex items-center justify-center bg-[#00000042]">
-      <div className="w-full max-w-3xl h-[65vh] bg-[#18181b24] shadow-2xl shadow-[#16949477] border-solid border-2 border-[#e0f2fe57] rounded-3xl flex flex-col justify-evenly items-center">
+  <div className="w-full max-sm:w-full max-sm:h-[100vh] h-[100vh] bg-[#000000da] pt-16 border-t border-[#e0f2fe57]">
+    <div className=" h-full w-full max-md:h-[70vh] max-sm:w-full p-5 flex items-center justify-center bg-[#00000042]">
+      <div className="w-full max-w-[90%] h-[65vh]  max-sm:h-[64vh] bg-[#18181b24] shadow-2xl shadow-[#16949477] border-solid border-2 border-[#e0f2fe57] rounded-3xl flex flex-col justify-evenly items-center">
         <div className="intro-container max-w-3xl mx-auto  text-center text-[#fafafac4]">
           <h2 className="intro-title text-4xl font-bold mb-2 animate-bounce max-sm:text-lg">Hi there!</h2>
           <p className="intro-text text-lg font-medium text-[#f3f3f3a8] max-sm:text-sm max-sm:p-5">
@@ -85,10 +85,10 @@ const settings = {
 </div>
     {/* Section no 2 */}
       <div className="w-full h-auto max-sm:w-full max-sm:h-full rounded-xl " style={{ background: `url(${photo})` , width: '100%', height:'100vh', backgroundSize: 'cover', backgroundPosition:'center'}}>
-        <div className="w-full h-full max-sm:w-full max-sm:h-full rounded-xl bg-[#000000da]  flex flex-col justify-evenly ">
-          <div className="w-full h-auto max-sm:w-full max-sm:h-full flex flex-col justify-evenly items-center  ">
-          <div className="w-[47%] h-[35vh] max-sm:w-[90%] max-sm:h-[35vh] shadow-2xl shadow-[#16949477] intro-text text-left font-medium border border-[#e0f2fe57] rounded-3xl bg-[#18181b24] text-[#f3f3f3a8] flex flex-col justify-center items-center gap-4 p-4 max-sm:p-5" >
-            <h1 className="text-[#fafafac4] m-2 text-xl  max-sm:text-base ">
+        <div className="w-full h-full max-sm:w-full max-sm:h-full rounded-xl bg-[#000000da]  flex flex-col justify-evenly max-sm:justify-around">
+          <div className="w-full h-auto max-sm:w-full  max-sm:h-[34vh] flex flex-col justify-evenly items-center  ">
+          <div className="w-[47%] h-[45vh] max-sm:w-[80%] max-sm:h-[30vh] shadow-2xl shadow-[#16949477] intro-text text-left font-medium border border-[#e0f2fe57] rounded-3xl bg-[#18181b24] text-[#f3f3f3a8] flex flex-col justify-center items-center gap-4 p-4 max-sm:p-5" >
+            <h1 className="text-[#fafafac4] m-2 text-xl  max-sm:text-sm ">
               MY Skills in {' '} 
                 <span className="text-white text-xl max-sm:text-base ">
                 <Typewriter 
