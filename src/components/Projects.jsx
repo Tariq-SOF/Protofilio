@@ -103,7 +103,7 @@ export default function Projects() {
           setallprojects(Arrjava)
         }}
         >Java Script</button>
-        <button className={`max-sm:text-xs  text-sm bg-[#3d3d4a]  w-24 h-10 rounded-xl hover:shadow-2xl hover:shadow-cyan-100/50 duration-500 font-semibold 
+        <button className={`max-sm:text-xs text-sm bg-[#3d3d4a]  w-24 h-10 rounded-xl  hover:shadow-2xl hover:shadow-cyan-100/50 duration-500 font-semibold 
         ${active==="4"
           ? "border border-sky-100 text-[#f3f3f3de] text-[15px] font-bold"
           : "text-[#f3f3f34a]"
@@ -121,13 +121,13 @@ export default function Projects() {
         <div className="w-full h-auto flex justify-center">
       <div className="Projects w-[90%] h-auto mb-4 rounded-xl bg-[#18181B] flex justify-evenly flex-wrap">
            {allprojects.map((item) => { 
-            return(<div key={item} className="bg-[#f4f4f409] w-[30%] h-[45vh] max-sm:h-[40vh] max-sm:w-[45%] mt-6 flex flex-col justify-between border-2 border-[#e0f2fe57] hover:border-4 hover:border-[#e0f2fe] duration-500 rounded-2xl cursor-pointer hover:shadow-cyan-100/50 hover:rotate-1 hover:scale-105 ">
-          <div className=" w-full text-center bg-cover bg-center ">
-            <a href={item.url} target="_blank"><img className="rounded-xl rounded-b-none" src={item.ImagePath} alt="youtube react" /></a>
-          </div>
-          <div className="h-[35vh] flex flex-col justify-center ml-1 gap-1 max-sm:p-1  "> 
-          <div className=" text-left  text-xl font-bold max-sm:text-xs max-sm:font-medium text-[#fafafac4]">{item.titel}</div>
-          <div className=" text-left  text-[#f3f3f34a] leading-6 text-sm font-semibold max-sm:text-xs ">{item.prograf}</div>
+            return( <div key={item} className="bg-[#f4f4f409] w-[30%] h-[45vh] max-sm:h-[40vh] max-sm:w-[45%] mt-6 flex flex-col justify-between border-2 border-[#1379bc57] hover:border-4 hover:border-[#e0f2fe] duration-500 rounded-2xl cursor-pointer hover:shadow-cyan-100/50 hover:rotate-1 hover:scale-105 ">
+          <a href={item.url} target="_blank"><div className=" w-full text-center bg-cover bg-center ">
+            <img className="rounded-xl rounded-b-none" src={item.ImagePath} alt="youtube react" />
+          </div></a>
+         <div className="h-[35vh] flex flex-col justify-center ml-1 gap-1 max-sm:p-1  "> 
+          <a href={item.url} target="_blank"><div className=" text-left  text-xl font-bold max-sm:text-xs max-sm:font-medium text-[#fafafac4]">{item.titel}</div>
+          <div className=" text-left  text-[#f3f3f34a] leading-6 text-sm font-semibold max-sm:text-xs ">{item.prograf}</div></a>
           </div>
         </div>)
             })}     

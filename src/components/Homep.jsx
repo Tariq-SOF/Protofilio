@@ -39,7 +39,7 @@ const settings = {
 
   return(<> 
 
-    <div className="w-full bg-black flex justify-center  ">
+    <div className="w-full  bg-black flex justify-center  ">
       <div className="w-[90%] bg-[#18181b9d] border rounded-lg border-[#e0f2fe57] ">
         
     <Nav/>
