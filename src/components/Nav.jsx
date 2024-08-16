@@ -7,6 +7,12 @@ export default function Nav() {
   const [actev, setactev] = useState("");
   const location = useLocation();
 
+  ReactGA.initialize('G-X6JCGSSLX3', {
+  gaOptions: {
+    userId: '8572916208'
+  }
+});
+
   React.useEffect(() => {
     setactev(location.pathname);
     trackPageView(location.pathname);
@@ -22,6 +28,7 @@ export default function Nav() {
       action: `Clicked on ${linkPath}`,
     });
   }
+  
 
   return (
     <nav className="w-full h-[10vh] p-5 max-sm:p-4 max-sm:w-full max-sm:h-[12vh] flex justify-center">
