@@ -59,7 +59,7 @@ const settings = {
         <div className="intro-container max-w-3xl mx-auto  text-center text-[#fafafac4]">
           <h2 className="intro-title text-4xl font-bold mb-2 animate-bounce max-sm:text-lg">Hi there!</h2>
           <p className="intro-text text-lg font-medium text-[#f3f3f3a8] max-sm:text-sm max-sm:p-5">
-            I'm an adept full-stack developer with a focus on frontend development. <br />
+            I'm an adept full-stack developer with a focus on frontend development and Backend. <br />
             I have a flair for creating dynamic and engaging web applications using <br />a wide array of
             languages, frameworks, and technologies.<br /> My aim is to deliver top-notch, user-friendly
             solutions<br /> that cater to the unique needs of my clients.
@@ -68,15 +68,15 @@ const settings = {
   <div className="rounded-lg text-white w-[60%] max-sm:w-[90%] max-sm:h-[6vh] h-[6vh] bg-[#9965a856] flex max-sm:text-xs ">
 <div className="  w-full flex items-center justify-center gap-1  ">
   <img className=" w-[14%] max-sm:w-[20%] bg-[#fdfafaf5] rounded-lg" src={github} alt="" />
-  <p >github</p>
+  <p >Github</p>
  </div>
   <div className="  w-full flex items-center justify-center gap-2 ">
   <img className=" w-[14%] max-sm:w-[20%] bg-[#fffffff5] rounded-lg " src={linkedin} alt="" />
-  <p>linkedin</p>
+  <p>Linkedin</p>
   </div>
   <div className=" w-full flex items-center justify-center gap-1 ">
   <img className=" w-[14%] max-sm:w-[20%] bg-[#fffffff5] rounded-lg" src={descored} alt="" />
-  <p>discord</p>
+  <p>Discord</p>
   </div>
 </div>
       </div>
