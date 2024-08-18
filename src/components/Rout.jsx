@@ -1,37 +1,27 @@
 import React, { useEffect } from "react";
 import { Routes, Route, useLocation } from "react-router-dom";
-import ReactGA from 'react-ga';
+import ReactGA from 'react-ga4';  
 import Homep from "./Homep";
 import About from "./About";
 import Projects from "./Projects";
 
 export default function Rout() {
-  ReactGA.initialize('G-X6JCGSSLX3', {
-    gaOptions: {
-      userId: '8572916208',
-      customDimensions: {
-        dimension1: 'premium'
-      }
-    }
-  });
+  const location = useLocation();
 
-  const Viewuser = () => {
-    const location = useLocation();
-    useEffect(() => {
-      ReactGA.set({ page: location.pathname });
-      ReactGA.pageview(location.pathname);
-    }, [location]);
-  };
+  useEffect(() => {
+    ReactGA.initialize('G-X6JCGSSLX3');
+  }, []);
+
+  useEffect(() => {
+    ReactGA.send({ hitType: "pageview", page: location.pathname });
+  }, [location]);
 
   return (
-    <>
-      <Viewuser />
-      <Routes>
-        <Route path="/" element={<Homep />} />
-        <Route path="/Homep" element={<Homep />} />
-        <Route path="/About" element={<About />} />
-        <Route path="/Projects" element={<Projects />} />
-      </Routes>
-    </>
+    <Routes>
+      <Route path="/" element={<Homep />} />
+      <Route path="/Homep" element={<Homep />} />
+      <Route path="/About" element={<About />} />
+      <Route path="/Projects" element={<Projects />} />
+    </Routes>
   );
 }
