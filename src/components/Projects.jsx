@@ -36,9 +36,9 @@ export default function Projects() {
   <div className="w-full h-auto bg-black flex justify-center">
     <div className="w-[90%] h-auto bg-[#18181b9d] border rounded-lg border-[#e0f2fe57]">
   <Nav/>
-   <div className="w-full h-auto " >
+   <div className="w-full h-auto">
                 {/* Section1 icon - prograf */}
-    <div className="Section1 w-full h-[80vh] flex justify-evenly items-center"  style={{ background: `url(${photo})` , width: '100%', height:'100vh', backgroundSize: 'cover', backgroundPosition:'center'}}>
+    <div className="Section1 w-full h-screen max-sm:h-[70vh] flex justify-evenly items-center"  style={{ background: `url(${photo})` , width: '100%',  backgroundSize: 'cover', backgroundPosition:'center'}}>
       <div className="w-full h-full flex justify-evenly items-center  bg-[#000000da] pt-16 border-t  border-[#e0f2fe57]">
       <div className="Prograf w-[50%] max-sm:w-full max-sm:p-6 flex flex-col gap-4  ">
         <div className="profile-header w-[45%]">
@@ -57,7 +57,7 @@ export default function Projects() {
 </div>
 </div>
     </div>
-                {/* Section2 button - progects */}
+              {/* Section2 button - progects */}
     <div className="Section2 w-full h-auto border-t border-t-[#e0f2fe57] ">
       <div className="Button w-full h-[20vh] rounded-xl flex items-center justify-center gap-8 max-sm:gap-2">
         <button className={`max-sm:text-xs text-sm bg-[#3d3d4a] hover:shadow-2xl hover:shadow-cyan-100/50  w-24 h-10 rounded-xl duration-500 font-semibold
@@ -69,7 +69,6 @@ export default function Projects() {
         onClick={()=>{
 
            handelactive("1")
-
           setallprojects(myprojects)
         
         }}

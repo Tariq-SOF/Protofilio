@@ -23,13 +23,13 @@ import tuwaiq from "../assets/aboutp/tuwaiqq.jpg"
 
 export default function About() {
   return(<>
-  <div className="w-full h-[481vh]  bg-black flex justify-center ">
+  <div className="w-full h-[481vh] max-sm:h-[455vh]   bg-black flex justify-center ">
     <div className="w-[90%] bg-[#18181b9d] border rounded-lg border-[#e0f2fe57]">
     <Nav/>
-    <div className="w-full h-[468vh] bg-black">
-    <div className="Section1 w-full h-[80vh] max-sm:w-full max-sm:h-[50vh] flex justify-evenly items-center"style={{ background: `url(${photo})` , width: '100%', height:'100vh', backgroundSize: 'cover', backgroundPosition:'center'}}>
-      <div className="w-full h-full  bg-[#000000da] border-t border-[#e0f2fe57] flex items-center justify-evenly gap-4">
-  <div className="Prograf w-[50%] max-sm:w-[90%] ">
+    <div className="w-full h-[468vh] max-sm:h-[442vh] bg-black">
+    <div className="Section1 w-full h-screen max-sm:w-full max-sm:h-[75vh] flex justify-evenly items-center"style={{ background: `url(${photo})` , width: '100%',  backgroundSize: 'cover', backgroundPosition:'center'}}>
+      <div className="w-full h-full  bg-[#000000da] border-t border-[#e0f2fe57] flex items-center justify-evenly gap-4 ">
+  <div className="Prograf w-[50%] max-sm:w-[90%]  ">
     <div className="profile-header w-[45%] max-sm:w-[60%]">
       <h1 className="text-2xl font-bold text-[#fafafac4] pb-4 max-sm:text-lg ">My Professional Journey</h1>
     </div>

@@ -2,7 +2,7 @@ import React from "react";
 import Nav from "./Nav";
 import github from "../assets/Icone/github.png"
 import linkedin from "../assets/Icone/linkedin.png";
-import descored from "../assets/Icone/descord.png"
+import Resume from "../assets/Icone/Resume.png"
 import photo from "../photo.avif";
 import { Typewriter, Cursor } from "react-simple-typewriter";
 import Slider from "react-slick";
@@ -20,8 +20,6 @@ import Seleniump from "../assets/Selenium_logo.svg.png"
 import taliwindp from "../assets/tailwind.png"
 
 export default function Homep() {
-  
-
 const settings = {
     infinite: true,
     dots: false, 
@@ -33,27 +31,23 @@ const settings = {
     cssEase: "linear",
     prevArrow: <></>, 
     nextArrow: <></>,
-
   };
-
 
   return(<> 
 
-    <div className="w-full  bg-black flex justify-center  ">
-      <div className="w-[90%] bg-[#18181b9d] border rounded-lg border-[#e0f2fe57] ">
-        
+    <div className="w-full  bg-black flex justify-center">
+      <div className="w-[90%] bg-[#18181b9d]  border rounded-lg border-[#e0f2fe57] ">   
     <Nav/>
 <div
-  className="h-full w-full relative"
+  className="h-screen w-full relative  max-sm:h-[80vh]"
   style={{
     background: `url(${photo})`,
     width: '100%',
-    height: '100vh',
     backgroundSize: 'cover',
     backgroundPosition: 'center',
   }}
 >
-  <div className="w-full max-sm:w-full max-sm:h-[100vh] h-[100vh] bg-[#000000da] pt-16 border-t border-[#e0f2fe57]">
+  <div className="w-full max-sm:w-full max-sm:h-[80vh] h-[100vh] bg-[#000000da] pt-16 border-t border-[#e0f2fe57]">
     <div className=" h-full w-full max-md:h-[70vh] max-sm:w-full p-5 flex items-center justify-center bg-[#00000042]">
       <div className="w-full max-w-[90%] h-[65vh]  max-sm:h-[64vh] bg-[#18181b24] shadow-2xl shadow-[#16949477] border-solid border-2 border-[#e0f2fe57] rounded-3xl flex flex-col justify-evenly items-center">
         <div className="intro-container max-w-3xl mx-auto  text-center text-[#fafafac4]">
@@ -65,27 +59,31 @@ const settings = {
             solutions<br /> that cater to the unique needs of my clients.
           </p>
         </div>
-  <div className="rounded-lg text-white w-[60%] max-sm:w-[90%] max-sm:h-[6vh] h-[6vh] bg-[#9965a856] flex max-sm:text-xs ">
-<div className="  w-full flex items-center justify-center gap-1  ">
-  <img className=" w-[14%] max-sm:w-[20%] bg-[#fdfafaf5] rounded-lg" src={github} alt="" />
-  <p >Github</p>
- </div>
-  <div className="  w-full flex items-center justify-center gap-2 ">
-  <img className=" w-[14%] max-sm:w-[20%] bg-[#fffffff5] rounded-lg " src={linkedin} alt="" />
-  <p>Linkedin</p>
-  </div>
-  <div className=" w-full flex items-center justify-center gap-1 ">
-  <img className=" w-[14%] max-sm:w-[20%] bg-[#fffffff5] rounded-lg" src={descored} alt="" />
-  <p>Discord</p>
-  </div>
+  <div className="rounded-lg text-[#f3f3f3d7] w-[60%] max-sm:w-[90%] max-sm:h-[6vh] h-[6vh] bg-[#9965a856] flex max-sm:text-xs ">
+    <a href="https://github.com/Tariq-SOF" target="_blank" rel="noopener noreferrer" className=" flex">
+  <div className="  w-full flex items-center justify-center gap-1 cursor-pointer">
+    <img className=" w-[17%] max-sm:w-[20%] max-sm:hover:w-[22%] rounded-lg hover:w-[18%] ease-in duration-300" src={github} alt="Github" />
+    <p >Github</p>
+ </div></a>
+     <a href="https://www.linkedin.com/in/tariq-almutairi-80/" target="_blank" rel="noopener noreferrer" className=" flex">
+  <div className="  w-full flex items-center justify-center gap-2 cursor-pointer">
+    <img className=" w-[16%] max-sm:w-[20%] max-sm:hover:w-[22%] rounded-lg hover:w-[18%] ease-in duration-300" src={linkedin} alt="Linkedin" />
+    <p>Linkedin</p>
+  </div></a>
+  <a href="/tariqcv.pdf" target="_blank" rel="noopener noreferrer" className="flex">
+      <div className="w-full flex items-center justify-center gap-1 cursor-pointer">
+        <img className="w-[17%] max-sm:w-[20%] max-sm:hover:w-[22%] rounded-lg hover:w-[19%] ease-in duration-300" src={Resume} alt="Resume" />
+        <p>Resume</p>
+      </div>
+    </a>
 </div>
       </div>
     </div>
   </div>
 </div>
     {/* Section no 2 */}
-      <div className="w-full h-auto max-sm:w-full max-sm:h-full rounded-xl " style={{ background: `url(${photo})` , width: '100%', height:'100vh', backgroundSize: 'cover', backgroundPosition:'center'}}>
-        <div className="w-full h-full max-sm:w-full max-sm:h-full rounded-xl bg-[#000000da]  flex flex-col justify-evenly max-sm:justify-around">
+      <div className="w-full h-screen max-sm:w-full  max-sm:h-[70vh] rounded-xl  " style={{ background: `url(${photo})` , width: '100%', backgroundSize: 'cover', backgroundPosition:'center'}}>
+        <div className="w-full h-full max-sm:w-full max-sm:h-[70vh] rounded-xl bg-[#000000da]  flex flex-col justify-evenly max-sm:justify-around">
           <div className="w-full h-auto max-sm:w-full  max-sm:h-[34vh] flex flex-col justify-evenly items-center  ">
           <div className="w-[47%] h-[45vh] max-sm:w-[80%] max-sm:h-[30vh] shadow-2xl shadow-[#16949477] intro-text text-left font-medium border border-[#e0f2fe57] rounded-3xl bg-[#18181b24] text-[#f3f3f3a8] flex flex-col justify-center items-center gap-4 p-4 max-sm:p-5" >
             <h1 className="text-[#fafafac4] m-2 text-xl  max-sm:text-sm ">
