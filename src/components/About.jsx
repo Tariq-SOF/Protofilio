@@ -24,8 +24,8 @@ import tuwaiq from "../assets/aboutp/tuwaiqq.jpg"
 
 export default function About() {
   return(<>
-  <div className="w-full  bg-black flex justify-center">
-    <div className="w-[90%] bg-[#18181b9d] border rounded-lg border-[#e0f2fe57]">
+  <div className="w-full bg-black flex justify-center">
+    <div className="w-[90%] h-auto bg-[#18181b9d] border rounded-lg border-[#e0f2fe57]">
     <Nav/>
     <div className="w-full h-[468vh] max-sm:h-[442vh] bg-black border-t border-[#e0f2fe57]">
     <div className="Section1 w-full h-screen max-sm:w-full max-sm:h-[75vh] flex justify-evenly items-center"style={{ background: `url(${photo})` , width: '100%',  backgroundSize: 'cover', backgroundPosition:'center'}}>
