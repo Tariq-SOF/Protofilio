@@ -1,5 +1,6 @@
 import React from "react";
 import Nav from "./Nav";
+import Footer from "./Footer";
 import photo from "../photo.avif"
 import Lottie from 'lottie-react';
 import timeline from "../assets/animatione/Animationtime.json";
@@ -23,18 +24,18 @@ import tuwaiq from "../assets/aboutp/tuwaiqq.jpg"
 
 export default function About() {
   return(<>
-  <div className="w-full h-[481vh] max-sm:h-[455vh]   bg-black flex justify-center ">
+  <div className="w-full  bg-black flex justify-center">
     <div className="w-[90%] bg-[#18181b9d] border rounded-lg border-[#e0f2fe57]">
     <Nav/>
-    <div className="w-full h-[468vh] max-sm:h-[442vh] bg-black">
+    <div className="w-full h-[468vh] max-sm:h-[442vh] bg-black border-t border-[#e0f2fe57]">
     <div className="Section1 w-full h-screen max-sm:w-full max-sm:h-[75vh] flex justify-evenly items-center"style={{ background: `url(${photo})` , width: '100%',  backgroundSize: 'cover', backgroundPosition:'center'}}>
-      <div className="w-full h-full  bg-[#000000da] border-t border-[#e0f2fe57] flex items-center justify-evenly gap-4 ">
+      <div className="w-full h-full  bg-[#000000da]  flex items-center justify-evenly gap-4 ">
   <div className="Prograf w-[50%] max-sm:w-[90%]  ">
     <div className="profile-header w-[45%] max-sm:w-[60%]">
-      <h1 className="text-2xl font-bold text-[#fafafac4] pb-4 max-sm:text-lg ">My Professional Journey</h1>
+      <h1 className="font-bold text-[#fafafac4] text-4xl mb-2 pb-4 max-sm:text-lg">My Professional Journey</h1>
     </div>
     <div className="profile-content intro-text text-lg font-medium text-[#f3f3f3a8] ">
-      <p className="text-[#f3f3f34a] leading-6 text-base max-sm:text-sm ">
+      <p className="leading-6 max-sm:text-sm font-semibold text-[#f3f3f3a8]">
          My Professional path from university and developed into a full-stack software developer. Along the way, I gained diverse experiences through hackathons, volunteer projects, training programs at top tech companies, and building projects for private organizations. This continuous journey of learning and professional growth has led me to my current integrated software development role, which I am proud to have achieved.
       </p>
     </div>
@@ -117,7 +118,7 @@ contentArrowStyle={{ borderRight: '7px solid  ' }}
   date="2019"
   iconStyle={{ background: 'rgb(33, 150, 243)',backgroundImage:`url(${kacst})`, backgroundPosition:'center', backgroundSize:'contain', color: '#fff' }}
 >
-   
+
   <div style={{backgroundImage: `url(${kacsthp})` , backgroundSize:`contain`, backgroundPosition:`center` , width:`100%`, height: `37vh`,backgroundRepeat: `no-repeat`}} className="bg-[#ffffff]">
       <div className="bg-[#000000ab] w-full h-full  ">
   <div className="bg-[#00000046] w-full h-full opacity-90 transition-opacity duration-500 cursor-pointer "> 
@@ -246,6 +247,7 @@ I completed an intensive front-end web developer training, becoming proficient i
     </div>
     </div>
     </div>
+        <Footer/>
   </div>
   </div>
   

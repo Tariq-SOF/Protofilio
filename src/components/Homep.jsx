@@ -1,5 +1,6 @@
 import React from "react";
 import Nav from "./Nav";
+import Footer from "./Footer";
 import github from "../assets/Icone/github.png"
 import linkedin from "../assets/Icone/linkedin.png";
 import Resume from "../assets/Icone/Resume.png"
@@ -35,8 +36,8 @@ const settings = {
 
   return(<> 
 
-    <div className="w-full  bg-black flex justify-center">
-      <div className="w-[90%] bg-[#18181b9d]  border rounded-lg border-[#e0f2fe57] ">   
+    <div className="w-full bg-black flex justify-center">
+      <div className="w-[90%] bg-[#18181b9d]  border rounded-lg border-[#e0f2fe57]">   
     <Nav/>
 <div
   className="h-screen w-full relative  max-sm:h-[80vh]"
@@ -51,9 +52,9 @@ const settings = {
     <div className=" h-full w-full max-md:h-[70vh] max-sm:w-full p-5 flex items-center justify-center bg-[#00000042]">
       <div className="w-full max-w-[90%] h-[65vh]  max-sm:h-[64vh] bg-[#18181b24] shadow-2xl shadow-[#16949477] border-solid border-2 border-[#e0f2fe57] rounded-3xl flex flex-col justify-evenly items-center">
         <div className="intro-container max-w-3xl mx-auto  text-center text-[#fafafac4]">
-          <h2 className="intro-title text-4xl font-bold mb-2 animate-bounce max-sm:text-lg">Hi there!</h2>
+          <h2 className="intro-title text-4xl font-bold mb-2 animate-bounce max-sm:text-lg">Hello and Welcome!</h2>
           <p className="intro-text text-lg font-medium text-[#f3f3f3a8] max-sm:text-sm max-sm:p-5">
-            I'm an adept full-stack developer with a focus on frontend development and Backend. <br />
+            I'm an skilled full-stack Developer with a focus on frontend and Backend development. <br />
             I have a flair for creating dynamic and engaging web applications using <br />a wide array of
             languages, frameworks, and technologies.<br /> My aim is to deliver top-notch, user-friendly
             solutions<br /> that cater to the unique needs of my clients.
@@ -145,6 +146,7 @@ const settings = {
 </div>
         </div>
        </div>
+        <Footer/>
     </div>
     </div> 
   

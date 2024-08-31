@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import Nav from "./Nav";
+import Footer from "./Footer";
 import photo from "../photo.avif";
 import Lottie from 'lottie-react';
 import computerIcon from "../assets/animatione/Animation.json";
@@ -36,16 +37,16 @@ export default function Projects() {
   <div className="w-full h-auto bg-black flex justify-center">
     <div className="w-[90%] h-auto bg-[#18181b9d] border rounded-lg border-[#e0f2fe57]">
   <Nav/>
-   <div className="w-full h-auto">
+   <div className="w-full h-auto" >
                 {/* Section1 icon - prograf */}
     <div className="Section1 w-full h-screen max-sm:h-[70vh] flex justify-evenly items-center"  style={{ background: `url(${photo})` , width: '100%',  backgroundSize: 'cover', backgroundPosition:'center'}}>
       <div className="w-full h-full flex justify-evenly items-center  bg-[#000000da] pt-16 border-t  border-[#e0f2fe57]">
       <div className="Prograf w-[50%] max-sm:w-full max-sm:p-6 flex flex-col gap-4  ">
         <div className="profile-header w-[45%]">
-          <h1 className="text-2xl font-bold text-[#fafafac4] max-sm:text-base">Full-Stack Developer with a Proven Track </h1>
+          <h1 className="font-bold max-sm:text-base text-[#fafafac4] text-4xl mb-2 pb-4">Full-Stack Developer with a Proven Track </h1>
         </div>
         <div className="profile-content ">
-          <p className="  text-[#f3f3f34a] leading-6 text-base max-sm:text-sm">
+          <p className=" leading-6 max-sm:text-sm text-lg font-medium text-[#f3f3f3a8]">
             My past projects have created a rich record of challenges and achievements that have contributed to my professional development. As a full-stack developer, I have built a variety of software projects that focused on meeting client needs. This experience in end-to-end software development and user-centric design has allowed me to develop new skills and deliver impactful solutions.
           </p>
         </div>
@@ -135,6 +136,7 @@ export default function Projects() {
 
     </div>
   </div>
+      <Footer/>
   </div>
   </div>
   </>

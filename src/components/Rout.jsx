@@ -4,6 +4,7 @@ import ReactGA from 'react-ga4';
 import Homep from "./Homep";
 import About from "./About";
 import Projects from "./Projects";
+import Contents from "./Contents";
 
 export default function Rout() {
   const location = useLocation();
@@ -22,6 +23,7 @@ export default function Rout() {
       <Route path="/Homep" element={<Homep />} />
       <Route path="/About" element={<About />} />
       <Route path="/Projects" element={<Projects />} />
+      <Route path="/Contents" element={<Contents/>}/>
     </Routes>
   );
 }
