@@ -2,7 +2,7 @@
 import { useState } from "react";
 import Nav from "./Nav";
 import Footer from "./Footer";
-import photo from "../photo.avif"
+import photo from "../assets/photo.avif";
 import Lottie from "lottie-react";
 import Done from "../assets/animatione/AnimationDone.json"
 import { useForm, ValidationError } from '@formspree/react';
@@ -30,12 +30,11 @@ export default function Contents() {
   }else{
     setShowEmoji(true)
     setmassageeror(null)
-    setmassagecorect("Your message has been sent successfully! We will get back to you soon.")
+    setmassagecorect("Your message sent successfully!")
     setTimeout(() => {
       setmassagecorect(null)
       setShowEmoji(false);
         
-      window.location.reload();
     }, 3500);
   }
 }
@@ -93,11 +92,11 @@ export default function Contents() {
             Submit
           </button>
              {massageeror} 
-            <div className=" w-auto h-[10vh] text-sm flex items-center ">
-              <div className="md:w-[14%] max-sm:w-[25%]"> 
+            <div className=" w-auto h-[6vh] text-sm flex items-center bg-[#333] rounded-md ">
+              <div className="md:w-[14%] max-sm:w-[50%]"> 
                  {showEmoji && (<Lottie className="" animationData={Done}/>)}
               </div>
-               <div className="text-[16px] text-[#fafafad3] font-sans ">
+                <div className="text-[14px] text-[#fafafad3] font-sans ">
                 {massagecorect}
               </div>
             </div>

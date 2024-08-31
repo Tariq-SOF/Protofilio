@@ -1,7 +1,7 @@
 import React from "react";
 import Nav from "./Nav";
 import Footer from "./Footer";
-import photo from "../photo.avif"
+import photo from "../assets/photo.avif";
 import Lottie from 'lottie-react';
 import timeline from "../assets/animatione/Animationtime.json";
 import { VerticalTimeline, VerticalTimelineElement }  from 'react-vertical-timeline-component';

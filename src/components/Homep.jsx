@@ -4,7 +4,7 @@ import Footer from "./Footer";
 import github from "../assets/Icone/github.png"
 import linkedin from "../assets/Icone/linkedin.png";
 import Resume from "../assets/Icone/Resume.png"
-import photo from "../photo.avif";
+import photo from "../assets/photo.avif";
 import { Typewriter, Cursor } from "react-simple-typewriter";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";

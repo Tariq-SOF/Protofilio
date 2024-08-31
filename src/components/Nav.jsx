@@ -44,7 +44,7 @@ export default function Nav() {
           Home Page
         </Link>
         <Link to="/about" className={actev === "/about" ? "border-b-2 text-[#f3f3f3] border-sky-100 text-sm" : "text-[#f3f3f3a8] text-sm"}>
-          About 
+          About Me
         </Link>
         <Link to="/projects" className={actev === "/projects" ? "border-b-2 text-[#f3f3f3] border-sky-100 text-sm" : "text-[#f3f3f3a8] text-sm"}>
           Projects 

@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import Nav from "./Nav";
 import Footer from "./Footer";
-import photo from "../photo.avif";
+import photo from "../assets/photo.avif";
 import Lottie from 'lottie-react';
 import computerIcon from "../assets/animatione/Animation.json";
 import FreshGoods from "../assets/photo_MyProgects/FreshGoods.png";

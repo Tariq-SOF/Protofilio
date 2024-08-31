@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
 import { Routes, Route, useLocation } from "react-router-dom";
-import ReactGA from 'react-ga4';  
+import ReactGA from 'react-ga4'; 
 import Homep from "./Homep";
 import About from "./About";
 import Projects from "./Projects";
@@ -18,12 +18,14 @@ export default function Rout() {
   }, [location]);
 
   return (
+     
     <Routes>
       <Route path="/" element={<Homep />} />
       <Route path="/Homep" element={<Homep />} />
       <Route path="/About" element={<About />} />
       <Route path="/Projects" element={<Projects />} />
       <Route path="/Contents" element={<Contents/>}/>
+      
     </Routes>
   );
 }
