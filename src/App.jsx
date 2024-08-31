@@ -6,8 +6,10 @@ function App() {
 
   return (
     <>
+    
 <Analytics/>
 <Rout/>
+
     </>
   )
 }
