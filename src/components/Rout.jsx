@@ -18,7 +18,7 @@ export default function Rout() {
   }, [location]);
 
   return (
-    <div className='w-full h-screen bg-black'>
+   
      
     <Routes>
       <Route path="/" element={<Homep />} />
@@ -28,6 +28,6 @@ export default function Rout() {
       <Route path="/Contents" element={<Contents/>}/>
       
     </Routes>
-    </div>
+ 
   );
 }
