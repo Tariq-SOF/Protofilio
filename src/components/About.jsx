@@ -215,8 +215,8 @@ performance, user experience, and SEO.</h5>
   </div>
 </div>
 </VerticalTimelineElement> 
-<div className="w-full "style={{ background: `url(${photo})` , width: '100%', height:'50vh', backgroundSize: 'cover', backgroundPosition:'center'}}>
-<div className="w-full h-[50vh] bg-[#000000da]">
+<div className="w-full "style={{ background: `url(${photo})` , width: '100%', backgroundSize: 'cover', backgroundPosition:'center'}}>
+<div className="w-full h-[40vh] bg-[#000000da] ">
  <VerticalTimelineElement
   contentStyle={{  
     color: '#fff', 
